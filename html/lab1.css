@@ -49,7 +49,15 @@
     margin: 0 1rem;
     transition: all 0.3s ease-in-out;
     line-height: 0.8cm;
-    
+}
+
+.col-sm-6 ul{
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+  transition: all 0.3s ease-in-out;
+  line-height: 0.8cm;
 }
 
 .col-sm-6 footer{
@@ -168,3 +176,45 @@ img {
   padding: 10px 20px;
 }
 
+.audio {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  background-color: #ec2fa3;
+  padding: 10px 20px;
+}
+
+.AudioCaption {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  font-size: 0.8 rem;
+  font-weight: 550;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#transcript {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+  font-weight: 550;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+  transition: all 0.3s ease-in-out;
+  line-height: 0.8cm;
+
+}
+
+.btn1{
+  background-color:  rgb(89, 32, 142);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}

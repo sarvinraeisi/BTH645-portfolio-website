@@ -218,3 +218,18 @@ img {
   cursor: pointer;
   margin: 10px;
 }
+
+.video1{
+  margin: 10px 
+
+}
+
+.oath{
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  transition: all 0.3s ease-in-out;
+  line-height: 0.8cm;
+}

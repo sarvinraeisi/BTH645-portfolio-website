@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="lab1.css">
-  <title>My Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- monserrat font-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-  <!-- mat icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lab1.css">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- monserrat font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <!-- mat icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
-           
+        <script>
+            function myFunction() {
+                var x = document.getElementById("transcript");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
         <mat-toolbar>
             <a mat-button href="index.html">Home</a>
-            
+
             <div class="dropdown">
                 <a mat-button class="dropbtn">Labs <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
                 <div class="dropdown-content">
@@ -37,24 +48,70 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a mat-button class="dropbtn">Assignments <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
+                <a mat-button class="dropbtn">Assignments <i class="fa fa-caret-square-o-down"
+                        aria-hidden="true"></i></a>
                 <div class="dropdown-content">
                     <div class="wide">
-                    <a href="assignment1.html">Assignment 1</a>
-                    <a href="assignment2.html">Assignment 2</a>
-                    <a href="assignment3.html">Assignment 3</a>
-                </div>
+                        <a href="assignment1.html">Assignment 1</a>
+                        <a href="assignment2.html">Assignment 2</a>
+                        <a href="assignment3.html">Assignment 3</a>
+                    </div>
                 </div>
             </div>
-        
-        
-          
+
+
+
         </mat-toolbar>
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
             <h1>
-    coming soon
+                The old doll
             </h1>
+            <div class="video1">
+                <video width="400" controls>
+                    <source src="A1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <button onclick="myFunction()" class="btn1">Transcript</button>
+
+            <div id="transcript">
+                As I crawled into bed, I noticed a small, dark figure in the corner of my room. At first, I thought it
+                was just my imagination, but as my eyes
+                adjusted to the darkness, I realized it was a doll. It wasn't just any doll though, it was my childhood
+                doll that I had lost years ago. I shook my head,
+                trying to dispel the fear that was creeping up inside of me, but when I looked back, the doll was gone.
+                Suddenly, I felt tiny hands wrap around my ankle
+                and I knew I wasn't alone in the room.
+            </div>
+
+     
+
+            <ol>
+                <p>In this assignment I've gathered and editted some images and audio files. These are the steps I took:
+
+                </p>
+                <li>Looked for  a short scary story which is suitable for the time limit of this assignment. </li>
+                <li>Using a drawing AI generated lots of images and picked the most proper ones.</li>
+                <li>Recorded My voice with Audacity application and adjusted the volume.</li>
+                <li>Looked for royalty-free background audios and sound effects and chose the best matches.</li>
+                <li>Created title and reference page using <a href="https://www.canva.com/">Canva.com</a>.</li>
+                <li>Transferred all of the files I previously gathered to OPS</li>
+                <li>Added the background sound and set the volume to 10%. The background sound starts from the very beginning and is played in the entire video.</li>
+                <li>Added the speech and soundeffects. I then sliced the speech because I wanted to use just sound effects in some parts. For instance, in one part of
+                     the video we can only hear frightened breathing. I did this to make the video a bit more scary.</li>
+                <li>Added title page, images, and reference page and positioned them according to the audio. I also added some effects to images in some parts to make them more spooky.</li>
+            </ol>
+            <hr>
+
+            <div class="oath">
+                I declare that this is wholly my own work in accordance with
+                Seneca Academic Policy. No part of this work has been copied
+                manually or electronically from any other source (including web
+                sites) or distributed to other students.<br><br>
+                Name: Sarvin Raeisi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; Student ID: 163927197
+
+            </div>
             <footer>
                 <script>  var dt = new Date(document.lastModified);
                     document.write('This page was last updated on ' + dt.toLocaleString());</script>
@@ -63,4 +120,5 @@
         <div class="col-sm-3"></div>
     </div>
 </body>
+
 </html>

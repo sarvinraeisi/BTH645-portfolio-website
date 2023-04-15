@@ -24,14 +24,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"
         integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
-    
-    <body>
-        <div class="main">
-            
-            <mat-toolbar>
+</head>
+
+<body>
+    <div class="main">
+
+        <mat-toolbar>
             <a mat-button href="index.html">Home</a>
-            
+
             <div class="dropdown">
                 <a mat-button class="dropbtn">Labs <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
                 <div class="dropdown-content">
@@ -45,53 +45,74 @@
             </div>
             <div class="dropdown">
                 <a mat-button class="dropbtn">Assignments <i class="fa fa-caret-square-o-down"
-                    aria-hidden="true"></i></a>
-                    <div class="dropdown-content">
-                        <div class="wide">
-                            <a href="assignment1.html">Assignment 1</a>
-                            <a href="assignment2.html">Assignment 2</a>
-                            <a href="assignment3.html">Assignment 3</a>
-                        </div>
+                        aria-hidden="true"></i></a>
+                <div class="dropdown-content">
+                    <div class="wide">
+                        <a href="assignment1.html">Assignment 1</a>
+                        <a href="assignment2.html">Assignment 2</a>
+                        <a href="assignment3.html">Assignment 3</a>
                     </div>
                 </div>
-                
-            </mat-toolbar>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <h1>
-                    Assignment 3
-                </h1>
-                
-                <div id="canvas-container">
-                    <script src="a3.js"></script>
-                </div>
-                <p>Photo by <a
-                    href="https://unsplash.com/@iangvalerio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian
+            </div>
+
+        </mat-toolbar>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h1>
+                Assignment 3
+            </h1>
+            <div id="canvas-container">
+                <script src="a3.js"></script>
+            </div>
+            <br>
+            <h2>instruction</h2>
+            <div class="text-content">
+                <p>To interact with this project there are several keys and buttons that you can use. By left clicking
+                    on
+                    the page a sentence will be displayed. You can keep clicking to see this sentence in 4 other
+                    languages as well.
+
+                    By pressing the space bar, the background music will be played and you can hit enter to stop it. By
+                    hitting ESC you can remove the text from the canvas.
+
+
+                </p>
+            </div>
+            <br>
+            <h2>References</h2>
+            <div class="text-content">
+                <p>
+                    The sentence displayed on the canvas is from a song, <a
+                        href="https://open.spotify.com/track/6FZAc2XaVYc8G8jaDnBshv?si=1e409c330710413f"
+                        target="_blank">you, clouds, rain</a>, by Heize.
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@iangvalerio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian
                         Valerio</a> on <a
                         href="https://unsplash.com/wallpapers/art/anime?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        
-                        <br>
-                        Music by <a
+
+                    <br>
+                    Music by <a
                         href="https://pixabay.com/users/juliush-3921568/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=7804">JuliusH</a>
                     from <a
-                    href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=7804">Pixabay</a>
+                        href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=7804">Pixabay</a>
                 </p>
-                
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("code");
-                        if (x.style.display === "none") {
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("code");
+                    if (x.style.display === "none") {
                         x.style.display = "block";
                     } else {
                         x.style.display = "none";
                     }
                 }
-                </script>
+            </script>
 
-<button onclick="myFunction()" class="btn1">P5.js code</button>
+            <button onclick="myFunction()" class="btn1">P5.js code</button>
 
-<div id="code">
-    <pre>
+            <div id="code">
+                <pre>
         <code class="language-javascript">
 var rainDrop = [];
 let img;
@@ -195,10 +216,10 @@ function mousePressed() {
 }
 </code>
 </pre>
-</div>
+            </div>
 
-           
-            
+
+
             <footer>
                 <script>  var dt = new Date(document.lastModified);
                     document.write('This page was last updated on ' + dt.toLocaleString());</script>
@@ -206,8 +227,8 @@ function mousePressed() {
         </div>
         <div class="col-sm-3"></div>
     </div>
-    
-      
+
+
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
 </body>
 

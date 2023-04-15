@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="lab1.css">
-  <title>My Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- monserrat font-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-  <!-- mat icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="main">
-           
-        <mat-toolbar>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lab1.css">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- monserrat font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <!-- mat icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"
+        integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    
+    <body>
+        <div class="main">
+            
+            <mat-toolbar>
             <a mat-button href="index.html">Home</a>
             
             <div class="dropdown">
@@ -37,24 +44,161 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a mat-button class="dropbtn">Assignments <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></a>
-                <div class="dropdown-content">
-                    <div class="wide">
-                    <a href="assignment1.html">Assignment 1</a>
-                    <a href="assignment2.html">Assignment 2</a>
-                    <a href="assignment3.html">Assignment 3</a>
+                <a mat-button class="dropbtn">Assignments <i class="fa fa-caret-square-o-down"
+                    aria-hidden="true"></i></a>
+                    <div class="dropdown-content">
+                        <div class="wide">
+                            <a href="assignment1.html">Assignment 1</a>
+                            <a href="assignment2.html">Assignment 2</a>
+                            <a href="assignment3.html">Assignment 3</a>
+                        </div>
+                    </div>
                 </div>
+                
+            </mat-toolbar>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h1>
+                    Assignment 3
+                </h1>
+                
+                <div id="canvas-container">
+                    <script src="a3.js"></script>
                 </div>
-            </div>
-        
-        
-          
-        </mat-toolbar>
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <h1>
-    coming soon
-            </h1>
+                <p>Photo by <a
+                    href="https://unsplash.com/@iangvalerio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian
+                        Valerio</a> on <a
+                        href="https://unsplash.com/wallpapers/art/anime?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        
+                        <br>
+                        Music by <a
+                        href="https://pixabay.com/users/juliush-3921568/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=7804">JuliusH</a>
+                    from <a
+                    href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=7804">Pixabay</a>
+                </p>
+                
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("code");
+                        if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                </script>
+
+<button onclick="myFunction()" class="btn1">P5.js code</button>
+
+<div id="code">
+    <pre>
+        <code class="language-javascript">
+var rainDrop = [];
+let img;
+let music;
+// array of texts to choose from
+let texts = [
+"비도 오고 그래서니 생각이 났어",
+"Because it was raining I thought of you",
+"چون بارون می اومد به تو فکر کردم",
+"Çünkü yağmur yağıyordu Seni düşündüm",
+"因为下雨了，我想起了你",
+]; 
+// variable to store the currently displayed text
+let displayedText = ""; 
+// counter variable to keep track of the current index
+let counter = 0; 
+
+function setup() {
+    var canvas = createCanvas(400, 400);
+    canvas.parent("canvas-container");
+
+    // initialize the rain drop array with 100 rain drops 
+    for (var i = 0; i < 100; i++) {
+        rainDrop[i] = new Rain();
+    }
+}
+
+function preload() {
+    // load the background image and the music
+    img = loadImage("city.jpg");
+    music = loadSound("rain.mp3");
+}
+
+function draw() {
+    background(0);
+    
+    // display the background image
+    image(img, 0, 0, width, height);
+    
+    // display the rain and update the rain drop position
+    for (var i = 0; i < 100; i++) {
+        rainDrop[i].display();
+        rainDrop[i].update();
+    }
+    // display the currently displayed text
+    textAlign(CENTER);
+    textSize(12);
+    text(displayedText, width / 2, height / 2);
+}
+
+function Rain() {
+    // rain randomly falls from the top of the canvas
+    this.x = random(0, width);
+    this.y = random(0, -height);
+
+  // display the rain drop
+  this.display = function () {
+      noStroke();
+      fill("#abdbe3");
+      // rain drop is an ellipse with angle
+      ellipse(this.x, this.y, 1, 4);
+    };
+    
+    // update the rain drop position
+    this.update = function () {
+        this.speed = 7;
+        this.y = this.y + this.speed;
+        // if the rain drop reaches the bottom of the canvas, it will be reset to the top
+        if (this.y > height) {
+            this.y = random(0, -height);
+    }
+};
+}
+
+function keyPressed() {
+    // keyCode 32 is for the spacebar
+    if (keyCode === 32) {
+    music.loop();
+}
+  // keyCode 13 is for the enter key
+  if (keyCode === 13) {
+      music.stop();
+    }
+    // keyCode 27 is for the escape key
+    if (keyCode === 27) {
+        displayedText = "";
+  }
+}
+
+function mousePressed() {
+    // detect left mouse button press
+  if (mouseButton === LEFT) {
+      // display the current text
+    displayedText = texts[counter];
+    counter++;
+    // reset the counter if it reaches the end of the array
+    if (counter >= texts.length) {
+        counter = 0;
+    }
+}
+}
+</code>
+</pre>
+</div>
+
+           
+            
             <footer>
                 <script>  var dt = new Date(document.lastModified);
                     document.write('This page was last updated on ' + dt.toLocaleString());</script>
@@ -62,5 +206,9 @@
         </div>
         <div class="col-sm-3"></div>
     </div>
+    
+      
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
 </body>
+
 </html>
